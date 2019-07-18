@@ -24,7 +24,7 @@
         }
 
         body {
-            padding: 6rem 4rem 10rem;
+            padding: 1.2rem 4rem 10rem;
             line-height: 1.7;
             font-family: "Nunito Sans", sans-serif;
             color: #555;
@@ -46,6 +46,17 @@
             word-spacing: 3px;
         }
 
+        #topLogo img{
+          display: block;
+          margin: 0 auto;
+          max-width: 128px;
+          margin-bottom:8px;
+        }
+
+        #topLogo {
+        border-bottom: 1px solid #999999;;
+        }
+
         h1::before {
             content: '';
             display: block;
@@ -63,6 +74,7 @@
         .container {
             width: 110rem;
             margin: 0 auto;
+            margin-top: 69px;
         }
 
         .cards-container {
@@ -79,7 +91,6 @@
 
         .card__hero {
             position: relative;
-            padding-top:40px
         }
 
         .card__hero::before {
@@ -174,7 +185,9 @@
 
 <body>
     
-    <div id="top"> <img src="img/NYTlogo.png"> </div> 
+    <div id="topLogo"> 
+        <img src="NYTlogo.png"> 
+    </div> 
    
     <div class="container">
         <h1>Ad Product Library</h1>
