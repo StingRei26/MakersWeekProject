@@ -1,19 +1,19 @@
 [
     {
         "id": "0",
-        "productName": "Huawei MateBook X Pro",
-        "image": "huawei-matebook-pro.jpg",
-        "cpu": "Intel Core i7, 8th generation",
-        "ram": "8GB",
-        "storage": "512 GB SSD",
-        "screen": "13.9-inch, 3K (3,000 x 2,080)",
-        "price": "1499",
-        "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio), and it comes packed with cutting edge components that allows it to perform brilliantly, and a battery life that runs rings around many of its rivals. It also has a very competitive price, giving you features, design and performance for quite a bit less money."
+        "productName": "Mobile",
+        "image": "Mobile.png",
+        "cpu": "",
+        "ram": "",
+        "storage": "",
+        "screen": "",
+        "price": "",
+        "description": ""
     },
     {
         "id": "1",
-        "productName": "Apple Macbook Pro 2018",
-        "image": "macbook-pro-15.jpg",
+        "productName": "Desktop",
+        "image": "Desktop.png",
         "cpu": "6-core Intel i7, 8th generation",
         "ram": "16GB",
         "storage": "1TB GB SSD",
@@ -23,8 +23,8 @@
     },
     {
         "id": "2",
-        "productName": "Dell XPS 13",
-        "image": "dell-xps-13.png",
+        "productName": "Video",
+        "image": "Mobile.png",
         "cpu": "Intel Core i7, 8th generation",
         "ram": "16GB",
         "storage": "512 GB SSD",
@@ -34,8 +34,8 @@
     },
     {
         "id": "3",
-        "productName": "Asus ZenBook Flip S",
-        "image": "asus-zenbook-flip-s.jpg",
+        "productName": "Shopping",
+        "image": "Rectangle.png",
         "cpu": "Intel Core i7, 8th generation",
         "ram": "16GB",
         "storage": "512 GB SSD",
@@ -45,8 +45,8 @@
     },
     {
         "id": "4",
-        "productName": "Samsung Notebook 9",
-        "image": "samsung-notebook-9.jpg",
+        "productName": "3 Panel Messaging",
+        "image": "Rectangle.png",
         "cpu": "Intel Core i7, 8th generation",
         "ram": "16GB",
         "storage": "256 GB SSD",
@@ -56,8 +56,8 @@
     },
     {
         "id": "4",
-        "productName": "Samsung Notebook 9",
-        "image": "samsung-notebook-9.jpg",
+        "productName": "Spotlight",
+        "image": "Rectangle.png",
         "cpu": "Intel Core i7, 8th generation",
         "ram": "16GB",
         "storage": "256 GB SSD",
@@ -65,4 +65,5 @@
         "price": "1499",
         "description": "While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018. Packed with more horsepower than some MacBook Pros,but at a much lower price, Samsung has crafted a laptop that has just as much substance as it does style. Plus, on top of its killer specs, it’s lightweight and thin, making this one of the most portable 15-inch laptops you can buy today."
     }
+    
 ]
