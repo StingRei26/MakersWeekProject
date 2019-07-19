@@ -78,6 +78,60 @@
 
         /* end of nav bar controles*/
 
+        /*code for desktop/mobile toggle*/
+        .switch {
+            position: absolute;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            top:138px;
+            right:437px;
+         }
+
+        .switch input { 
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+           position: absolute;
+           cursor: pointer;
+           top: 0;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           background-color: #ccc;
+          -webkit-transition: .4s;
+          transition: .4s;
+         }
+
+        .slider:before {
+         position: absolute;
+         content: "";
+         height: 26px;
+         width: 26px;
+         left: 4px;
+         bottom: 4px;
+         background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+        }
+
+        input:checked + .slider {
+        background-color: black;
+        }
+
+        input:focus + .slider {
+        /*box-shadow: 0 0 1px black;*/
+        }
+
+        input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+       }
+
         #topLogo img{
           display: block;
           margin: 0 auto;
@@ -214,38 +268,34 @@
             margin-left: 1rem;
         }
     </style>
-</head>
-
 <body>
-    
-    <div id="topLogo"> 
-        <img src="NYTlogo.png"> 
-    </div> 
-
-    <div class="navbar"> </div>
-</head>
-<body>
-
-    <div class="container">
-        <h1>Ad Product Library</h1>
-        <ul>
-  <li id="showall"><a href="#showall">show all</a></li>
-  <li id="messId"><a href="#messaging">messaging</a></li>
-  <li id="slideshow"><a href="#slideshow">slideshow</a></li>
-  <li id="video"><a href="#video">video</a></li>
-  <li id="custom"><a href="#custom">custom</a></li>
-</ul>
-        <div class="cards-container">
-            {%CARDS%}
+        <div id="topLogo">
+            <img src="NYTlogo.png">
         </div>
-    </div>
-</body>
+
+        <div class="navbar"> </div>
+        <div class="container">
+            <h1>Ad Product Library</h1>
+               <label class="switch">Mobile
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+            <ul>
+                <li id="showall"><a href="#showall">show all</a></li>
+                <li id="messId"><a href="#messaging">messaging</a></li>
+                <li id="slideshow"><a href="#slideshow">slideshow</a></li>
+                <li id="video"><a href="#video">video</a></li>
+                <li id="custom"><a href="#custom">custom</a></li>
+            </ul>
+            <div class="cards-container">
+                {%CARDS%}
+            </div>
+        </div>
+        </body>
 
 </html>
 
 <script>
-
-
 // Adding filters
 var messId = document.getElementById("messId"); 
 var showall = document.getElementById("showall");
@@ -321,8 +371,7 @@ var card11 = document.getElementsByClassName("card")[11];
         card11.style.display = "block";
         card4.style.display = "block";
     }
-
-      slideshow.onclick = () => {
+    slideshow.onclick = () => {
         card0.style.display = "none";
         card1.style.display = "none";
         card2.style.display = "none";
@@ -350,5 +399,4 @@ var card11 = document.getElementsByClassName("card")[11];
         card11.style.display = "none";
         card4.style.display = "none";
     }
-
 </script>
