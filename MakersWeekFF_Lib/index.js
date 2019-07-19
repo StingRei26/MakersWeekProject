@@ -58,7 +58,10 @@ const server = http.createServer((req, res) => {
         res.writeHead(404, { 'Content-type': 'text/html'});
         res.end('URL was not found on the server!');
     }
-    
+
+
+    // TO FILTER IMAGES BASED ON TYPE 
+   
 });
 
 server.listen(1337, '127.0.0.1', () => {
@@ -66,6 +69,7 @@ server.listen(1337, '127.0.0.1', () => {
 });
 
 function replaceTemplate(originalHtml, laptop) {
+    
     let output = originalHtml.replace(/{%PRODUCTNAME%}/g, laptop.productName);
     output = output.replace(/{%IMAGE%}/g, laptop.image);
     output = output.replace(/{%PRICE%}/g, laptop.price);
@@ -75,8 +79,8 @@ function replaceTemplate(originalHtml, laptop) {
     output = output.replace(/{%RAM%}/g, laptop.ram);
     output = output.replace(/{%DESCRIPTION%}/g, laptop.description);
     output = output.replace(/{%ID%}/g, laptop.id);
+
     return output;
+
 }
-
-
 
