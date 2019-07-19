@@ -1,8 +1,8 @@
 [
     {
         "id": "0",
-        "productName": "Mobile Flex Frame Messaging",
-        "image": "Mobile.png",
+        "productName": "Voices",
+        "image": "desktop_voices.png",
         "cpu": "",
         "ram": "",
         "storage": "",
@@ -12,8 +12,8 @@
     },
     {
         "id": "1",
-        "productName": "Desktop",
-        "image": "Desktop.png",
+        "productName": "3 Column Messaging",
+        "image": "desktop_3columnmessaging.png",
         "cpu": "6-core Intel i7, 8th generation",
         "ram": "16GB",
         "storage": "1TB GB SSD",
@@ -23,8 +23,8 @@
     },
     {
         "id": "2",
-        "productName": "Video",
-        "image": "Mobile.png",
+        "productName": "3D 360",
+        "image": "desktop_3d360.png",
         "cpu": "Intel Core i7, 8th generation",
         "ram": "16GB",
         "storage": "512 GB SSD",
@@ -34,8 +34,8 @@
     },
     {
         "id": "3",
-        "productName": "Shopping",
-        "image": "Rectangle.png",
+        "productName": "16:9 Video",
+        "image": "desktop_16-9.png",
         "cpu": "Intel Core i7, 8th generation",
         "ram": "16GB",
         "storage": "512 GB SSD",
@@ -45,8 +45,8 @@
     },
     {
         "id": "4",
-        "productName": "3 Panel Messaging",
-        "image": "Rectangle.png",
+        "productName": "Anamorphic",
+        "image": "desktop_anamorphic.png",
         "cpu": "Intel Core i7, 8th generation",
         "ram": "16GB",
         "storage": "256 GB SSD",
@@ -55,9 +55,86 @@
         "description": "While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018. Packed with more horsepower than some MacBook Pros,but at a much lower price, Samsung has crafted a laptop that has just as much substance as it does style. Plus, on top of its killer specs, it’s lightweight and thin, making this one of the most portable 15-inch laptops you can buy today."
     },
     {
-        "id": "4",
-        "productName": "Spotlight",
-        "image": "Rectangle.png",
+        "id": "5",
+        "productName": "Article Carousel",
+        "image": "desktop_article-carousel.png",
+        "cpu": "Intel Core i7, 8th generation",
+        "ram": "16GB",
+        "storage": "256 GB SSD",
+        "screen": "15-inch, Full HD",
+        "price": "1499",
+        "description": "While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018. Packed with more horsepower than some MacBook Pros,but at a much lower price, Samsung has crafted a laptop that has just as much substance as it does style. Plus, on top of its killer specs, it’s lightweight and thin, making this one of the most portable 15-inch laptops you can buy today."
+    },
+     {
+        "id": "6",
+        "productName": "360 Image",
+        "image": "desktop_360image.png",
+        "cpu": "Intel Core i7, 8th generation",
+        "ram": "16GB",
+        "storage": "256 GB SSD",
+        "screen": "15-inch, Full HD",
+        "price": "1499",
+        "description": "While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018. Packed with more horsepower than some MacBook Pros,but at a much lower price, Samsung has crafted a laptop that has just as much substance as it does style. Plus, on top of its killer specs, it’s lightweight and thin, making this one of the most portable 15-inch laptops you can buy today."
+    },
+     {
+        "id": "7",
+        "productName": "Audio",
+        "image": "desktop_audio.png",
+        "cpu": "Intel Core i7, 8th generation",
+        "ram": "16GB",
+        "storage": "256 GB SSD",
+        "screen": "15-inch, Full HD",
+        "price": "1499",
+        "description": "While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018. Packed with more horsepower than some MacBook Pros,but at a much lower price, Samsung has crafted a laptop that has just as much substance as it does style. Plus, on top of its killer specs, it’s lightweight and thin, making this one of the most portable 15-inch laptops you can buy today."
+    },
+    {
+        "id": "8",
+        "productName": "Audio",
+        "image": "desktop_audio.png",
+        "cpu": "Intel Core i7, 8th generation",
+        "ram": "16GB",
+        "storage": "256 GB SSD",
+        "screen": "15-inch, Full HD",
+        "price": "1499",
+        "description": "While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018. Packed with more horsepower than some MacBook Pros,but at a much lower price, Samsung has crafted a laptop that has just as much substance as it does style. Plus, on top of its killer specs, it’s lightweight and thin, making this one of the most portable 15-inch laptops you can buy today."
+    },
+    {
+        "id": "9",
+        "productName": "Crossword",
+        "image": "desktop_crossword.png",
+        "cpu": "Intel Core i7, 8th generation",
+        "ram": "16GB",
+        "storage": "256 GB SSD",
+        "screen": "15-inch, Full HD",
+        "price": "1499",
+        "description": "While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018. Packed with more horsepower than some MacBook Pros,but at a much lower price, Samsung has crafted a laptop that has just as much substance as it does style. Plus, on top of its killer specs, it’s lightweight and thin, making this one of the most portable 15-inch laptops you can buy today."
+    },
+   {
+        "id": "10",
+        "productName": "360 Video",
+        "image": "desktop_360video.png",
+        "cpu": "Intel Core i7, 8th generation",
+        "ram": "16GB",
+        "storage": "256 GB SSD",
+        "screen": "15-inch, Full HD",
+        "price": "1499",
+        "description": "While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018. Packed with more horsepower than some MacBook Pros,but at a much lower price, Samsung has crafted a laptop that has just as much substance as it does style. Plus, on top of its killer specs, it’s lightweight and thin, making this one of the most portable 15-inch laptops you can buy today."
+    },
+       {
+        "id": "11",
+        "productName": "360 Video",
+        "image": "desktop_360video.png",
+        "cpu": "Intel Core i7, 8th generation",
+        "ram": "16GB",
+        "storage": "256 GB SSD",
+        "screen": "15-inch, Full HD",
+        "price": "1499",
+        "description": "While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018. Packed with more horsepower than some MacBook Pros,but at a much lower price, Samsung has crafted a laptop that has just as much substance as it does style. Plus, on top of its killer specs, it’s lightweight and thin, making this one of the most portable 15-inch laptops you can buy today."
+    },
+       {
+        "id": "10",
+        "productName": "360 Video",
+        "image": "desktop_360video.png",
         "cpu": "Intel Core i7, 8th generation",
         "ram": "16GB",
         "storage": "256 GB SSD",
@@ -66,4 +143,4 @@
         "description": "While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018. Packed with more horsepower than some MacBook Pros,but at a much lower price, Samsung has crafted a laptop that has just as much substance as it does style. Plus, on top of its killer specs, it’s lightweight and thin, making this one of the most portable 15-inch laptops you can buy today."
     }
     
-]
+] 
