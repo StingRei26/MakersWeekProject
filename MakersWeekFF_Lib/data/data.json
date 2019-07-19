@@ -67,8 +67,8 @@
     },
      {
         "id": "6",
-        "productName": "360 Image",
-        "image": "desktop_360image.png",
+        "productName": "Slideshow",
+        "image": "desktop_slideshow.png",
         "cpu": "Intel Core i7, 8th generation",
         "ram": "16GB",
         "storage": "256 GB SSD",
@@ -89,17 +89,6 @@
     },
     {
         "id": "8",
-        "productName": "Audio",
-        "image": "desktop_audio.png",
-        "cpu": "Intel Core i7, 8th generation",
-        "ram": "16GB",
-        "storage": "256 GB SSD",
-        "screen": "15-inch, Full HD",
-        "price": "1499",
-        "description": "While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018. Packed with more horsepower than some MacBook Pros,but at a much lower price, Samsung has crafted a laptop that has just as much substance as it does style. Plus, on top of its killer specs, it’s lightweight and thin, making this one of the most portable 15-inch laptops you can buy today."
-    },
-    {
-        "id": "9",
         "productName": "Crossword",
         "image": "desktop_crossword.png",
         "cpu": "Intel Core i7, 8th generation",
@@ -110,7 +99,7 @@
         "description": "While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018. Packed with more horsepower than some MacBook Pros,but at a much lower price, Samsung has crafted a laptop that has just as much substance as it does style. Plus, on top of its killer specs, it’s lightweight and thin, making this one of the most portable 15-inch laptops you can buy today."
     },
    {
-        "id": "10",
+        "id": "9",
         "productName": "360 Video",
         "image": "desktop_360video.png",
         "cpu": "Intel Core i7, 8th generation",
@@ -121,20 +110,20 @@
         "description": "While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018. Packed with more horsepower than some MacBook Pros,but at a much lower price, Samsung has crafted a laptop that has just as much substance as it does style. Plus, on top of its killer specs, it’s lightweight and thin, making this one of the most portable 15-inch laptops you can buy today."
     },
        {
+        "id": "10",
+        "productName": "Messaging",
+        "image": "desktop_messaging.png",
+        "cpu": "Intel Core i7, 8th generation",
+        "ram": "16GB",
+        "storage": "256 GB SSD",
+        "screen": "15-inch, Full HD",
+        "price": "1499",
+        "description": "While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018. Packed with more horsepower than some MacBook Pros,but at a much lower price, Samsung has crafted a laptop that has just as much substance as it does style. Plus, on top of its killer specs, it’s lightweight and thin, making this one of the most portable 15-inch laptops you can buy today."
+    },
+    {
         "id": "11",
-        "productName": "360 Video",
-        "image": "desktop_360video.png",
-        "cpu": "Intel Core i7, 8th generation",
-        "ram": "16GB",
-        "storage": "256 GB SSD",
-        "screen": "15-inch, Full HD",
-        "price": "1499",
-        "description": "While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018. Packed with more horsepower than some MacBook Pros,but at a much lower price, Samsung has crafted a laptop that has just as much substance as it does style. Plus, on top of its killer specs, it’s lightweight and thin, making this one of the most portable 15-inch laptops you can buy today."
-    },
-       {
-        "id": "10",
-        "productName": "360 Video",
-        "image": "desktop_360video.png",
+        "productName": "Mobile Video",
+        "image": "mobile_video.png",
         "cpu": "Intel Core i7, 8th generation",
         "ram": "16GB",
         "storage": "256 GB SSD",

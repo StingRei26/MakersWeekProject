@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Nunito+Sans" rel="stylesheet">
 
-    <title>Ad Product Library</title>
+     <title>Ad Product Library</title>
 
     <style>
         *,
@@ -40,16 +40,48 @@
             font-size: 4rem;
             color: black;
             /*transform: skewY(-5deg);*/
-            margin-bottom: 6rem;
+            margin-bottom: 1rem;
             text-align: left;
             position: relative;
             word-spacing: 3px;
         }
 
+        /* code for the nav bar */
+
+         ul {
+               list-style-type: none;
+               margin: 0;
+               padding: 0;
+               overflow: hidden;
+               margin-bottom: 32px;
+               border-top: 1px solid #999999;
+               border-bottom: 1px solid #999999;
+            }
+
+        li {
+            float: left;
+            }
+
+        li a {
+            display: block;
+            padding: 8px;
+            font-family: "NYTFranklin";
+            font-size: 17px;
+            line-height: 15px;
+            color: lightgrey;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            color:#000000;
+        }
+
+        /* end of nav bar controles*/
+
         #topLogo img{
           display: block;
           margin: 0 auto;
-          max-width: 128px;
+          max-width: 148px;
           margin-bottom:8px;
         }
 
@@ -114,8 +146,8 @@
             /*background: linear-gradient(to right, #67b26f, #4ca2cd);*/
             background-color: #E3E3E3; 
             /*padding: 1.3rem .8rem;*/
-            font-family: "Bungee Inline", sans-serif;
-            font-weight: 400;
+            font-family: "NYTFranklin";
+            font-weight: 200;
             font-size: 2rem;
             color: black;
             /*margin-bottom: 2rem;*/
@@ -189,9 +221,20 @@
     <div id="topLogo"> 
         <img src="NYTlogo.png"> 
     </div> 
-   
+
+    <div class="navbar"> </div>
+</head>
+<body>
+
     <div class="container">
         <h1>Ad Product Library</h1>
+        <ul>
+  <li id="showall"><a href="#showall">show all</a></li>
+  <li id="messId"><a href="#messaging">messaging</a></li>
+  <li id="slideshow"><a href="#slideshow">slideshow</a></li>
+  <li id="video"><a href="#video">video</a></li>
+  <li id="custom"><a href="#custom">custom</a></li>
+</ul>
         <div class="cards-container">
             {%CARDS%}
         </div>
@@ -199,3 +242,113 @@
 </body>
 
 </html>
+
+<script>
+
+
+// Adding filters
+var messId = document.getElementById("messId"); 
+var showall = document.getElementById("showall");
+var video = document.getElementById("video");
+var slideshow = document.getElementById("slideshow");
+var custom = document.getElementById("custom");
+var card0 = document.getElementsByClassName("card")[0];
+var card1 = document.getElementsByClassName("card")[1];
+var card2 = document.getElementsByClassName("card")[2];
+var card3 = document.getElementsByClassName("card")[3];
+var card4 = document.getElementsByClassName("card")[4];
+var card5 = document.getElementsByClassName("card")[5];
+var card6 = document.getElementsByClassName("card")[6];
+var card7 = document.getElementsByClassName("card")[7];
+var card8 = document.getElementsByClassName("card")[8];
+var card9 = document.getElementsByClassName("card")[9];
+var card10 = document.getElementsByClassName("card")[10];
+var card11 = document.getElementsByClassName("card")[11];
+
+    messId.onclick = () => {
+        card0.style.display = "none";
+        card2.style.display = "none";
+        card3.style.display = "none";
+        card4.style.display = "none";
+        card5.style.display = "none";
+        card6.style.display = "none";
+        card7.style.display = "none";
+        card8.style.display = "none";
+        card9.style.display = "none";
+        card11.style.display = "none";
+        card10.style.display = "block";
+        card1.style.display = "block";
+    }
+    showall.onclick = () => {
+        card0.style.display = "block";
+        card1.style.display = "block";
+        card2.style.display = "block";
+        card3.style.display = "block";
+        card4.style.display = "block";
+        card5.style.display = "block";
+        card6.style.display = "block";
+        card7.style.display = "block";
+        card8.style.display = "block";
+        card9.style.display = "block";
+        card10.style.display = "block";
+        card11.style.display = "block";   
+    }
+    video.onclick = () => {
+        card0.style.display = "none";
+        card1.style.display = "none";
+        card2.style.display = "none";
+        card5.style.display = "none";
+        card6.style.display = "none";
+        card7.style.display = "none";
+        card8.style.display = "none";
+        card10.style.display = "none";
+        card3.style.display = "block";
+        card9.style.display = "block";
+        card11.style.display = "block";
+        card4.style.display = "block";
+    }
+    video.onclick = () => {
+        card0.style.display = "none";
+        card1.style.display = "none";
+        card2.style.display = "none";
+        card5.style.display = "none";
+        card6.style.display = "none";
+        card7.style.display = "none";
+        card8.style.display = "none";
+        card10.style.display = "none";
+        card3.style.display = "block";
+        card9.style.display = "block";
+        card11.style.display = "block";
+        card4.style.display = "block";
+    }
+
+      slideshow.onclick = () => {
+        card0.style.display = "none";
+        card1.style.display = "none";
+        card2.style.display = "none";
+        card5.style.display = "none";
+        card6.style.display = "block";
+        card7.style.display = "none";
+        card8.style.display = "none";
+        card10.style.display = "none";
+        card3.style.display = "none";
+        card9.style.display = "none";
+        card11.style.display = "none";
+        card4.style.display = "none";
+    }
+    custom.onclick = () => {
+        card0.style.display = "none";
+        card1.style.display = "none";
+        card2.style.display = "none";
+        card5.style.display = "block";
+        card6.style.display = "none";
+        card7.style.display = "block";
+        card8.style.display = "block";
+        card10.style.display = "none";
+        card3.style.display = "none";
+        card9.style.display = "none";
+        card11.style.display = "none";
+        card4.style.display = "none";
+    }
+
+</script>
