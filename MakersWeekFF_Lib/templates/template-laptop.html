@@ -47,6 +47,10 @@
             border-bottom: 1px solid #999999;
         }
 
+        h2 {
+            border-bottom: 1px solid #999999;
+        }
+
        /* h1::before {
             content: '';
             display: block;
@@ -110,11 +114,11 @@
             opacity: .4;
         }
 
-        .laptop__img {
+       .laptop__img {
             width: 100%;
             display: block;
         }
-
+/*         
         .laptop__price {
             position: absolute;
             top: -3rem;
@@ -133,6 +137,56 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        } */
+
+        .info_panel{
+            display:flex;
+            font-family: "NYTFranklin";
+        }
+
+        .left_panel{
+            margin: 0 2rem 0 15rem;
+        }
+
+        .links{
+           border-top: 1px solid #999999;;
+            margin-top:1rem;
+            display:flex;
+            justify-content: space-evenly;
+            font-size:24px;
+        }
+
+        .link{
+            width: 18rem;
+            height: 4rem;
+            background-color: #F1F1F1;
+            border-radius:6.57778px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .link a {
+            text-decoration: none;
+        }
+
+        .link a, a:visited, a:hover, a:active {
+         color: #888888;
+        }
+        
+
+        .right_panel{
+            width: 52rem;
+            margin-right: 15rem;
+        }
+
+        .prod_details {
+            margin-top: 3rem;
+        }
+
+        .prod_details p {
+            margin: 3rem 0 5rem 0;
         }
 
         .laptop__back:link,
@@ -165,11 +219,9 @@
 
         .laptop__name {
          
-            padding: 1.75rem 1rem;
-            font-family: "NYTKarnak";
-            font-weight: 400;
-            font-size: 3.25rem;
-            text-align: center;
+            font-family: "NYTFranklin";
+            font-weight: 700;
+            font-size: 1.5rem;
             word-spacing: 2px;
         }
 
@@ -183,7 +235,6 @@
         }
 
         .laptop__description {
-            padding: 5rem 6rem;
             font-size: 1.6rem;
             line-height: 1.8;
         }
@@ -211,7 +262,6 @@
         }
 
         .laptop__source {
-            padding: 0 6rem 3rem;
             color: #999;
             font-size: 1.2rem;
         }
@@ -256,21 +306,37 @@
            <!-- <p class="laptop__price">${%PRICE%}</p>-->
 
             <div class="laptop__hero">
-
+                
                 <img src="/{%IMAGE%}" alt="{%PRODUCTNAME%}" class="laptop__img">
             </div>
-            <h2 class="laptop__name">{%PRODUCTNAME%}</h2>
-            <div class="laptop__details">
-                <p><span class="emoji-left">🖥</span> {%SCREEN%}</p>
-                <p><span class="emoji-left">🧮</span> {%CPU%}</p>
-                <p><span class="emoji-left">💾</span> {%STORAGE%}</p>
-                <p><span class="emoji-left">📦</span> {%RAM%}</p>
+            <div class="info_panel">
+                <div class="left_panel">
+                    <div class="flex_description">
+                        <h2 class="laptop__name">{%PRODUCTNAME%}</h2>
+    
+                        <p class="laptop__description">{%DESCRIPTION%}</p>
+
+                    </div>  
+                    <div class="links">
+                        <div class="demo link">
+                            <a href="https://www.nytimes.com"target="_blank">Demo</a>
+                        </div>    
+                        <div class="spec link">    
+                            <a href="https://www.nytimes.com"target="_blank">Specs</a>
+                        </div>
+                    </div>
+                    <div class="prod_details">
+                        <h2>Production Details</h2>
+                        <p>{%STORAGE%}</p>
+                    </div>
+                </div>
+                <div class="right_panel">
+                    <h2 class="benchmarks">Benchmark Info</h2>
+                    <p>CTR  {%CPU%}</p>
+                    <p> Interation rate     {%RAM%}</p>
+                    </h2>
+                </div>
             </div>
-            <p class="laptop__description">{%DESCRIPTION%}</p>
-            <p class="laptop__source">Demo Test Page <a href="https://www.nytimes.com"
-                    target="_blank">https://www.techradar.com/news/mobile-computing/laptops/best-laptops-1304361</a></p>
-       <!--<a href="#" class="laptop__link">Buy now for ${%PRICE%} <span class="emoji-right">🥳 😍</span></a>
-       -->
         </figure>
     </div>
 </body>

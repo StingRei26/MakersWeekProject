@@ -1,14 +1,14 @@
 [
     {
         "id": "0",
-        "productName": "Voices",
+        "productName": "Flex Frame Voices",
         "image": "desktop_voices.png",
-        "cpu": "",
-        "ram": "",
-        "storage": "",
+        "cpu": ".06%",
+        "ram": ".23%",
+        "storage": "orem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ducimus provident, voluptatem iure nostrum vel molestiae! Optio a magni qui nobis soluta doloremque inventore et eveniet minus ad? Quos atque dolore eligendi autem facere! Recusandae, alias quo, sit reiciendis nesciunt tenetur sed libero ex voluptates commodi a suscipit dolores obcaecati modi sunt.",
         "screen": "",
         "price": "",
-        "description": "Description Field: This is a mobile flex frame messaging. Currently our main go to for standard media buys."
+        "description": " A custom, fast-loading native ad experience to tell your story beautifully across mobile, tablet and desktop with a compelling still image and contextual copy. • Ideal canvas for rich brand, image-based storytelling and delivers at scale. • This fast loading native ad experience allows brands to tell their stories beautifully cross all platforms with a compelling still image and contextual copy. • Available in 2 Column or 3 Column Display Top Performing Verticals: Advocacy, Fine Arts, Travel, Packaged Goods, American Fashion"
     },
     {
         "id": "1",
