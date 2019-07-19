@@ -26,17 +26,18 @@
         body {
             padding: 6rem 4rem 10rem;
             line-height: 1.7;
-            font-family: "Nunito Sans", sans-serif;
-            color: #555;
+            font-family: "NYTKarnak";
+            color: rgb(10, 10, 10);
             min-height: 100vh;
-            background: linear-gradient(to bottom right, #67b26f, #4ca2cd);
+            /*background: linear-gradient(to bottom right, #67b26f, #4ca2cd);*/
+            background: white;
         }
 
         h1 {
-            font-family: "Bungee Inline", sans-serif;
+            font-family: "NYTKarnak";
             font-weight: 400;
             font-size: 6rem;
-            color: white;
+            color: black;
             transform: skewY(-5deg);
             margin-bottom: 6rem;
             text-align: center;
@@ -44,7 +45,7 @@
             word-spacing: 3px;
         }
 
-        h1::before {
+       /* h1::before {
             content: '';
             display: block;
             height: 65%;
@@ -56,7 +57,7 @@
             opacity: .8;
             z-index: -1;
             transform: skewY(370deg) translate(-50%, -50%);
-        }
+        }*/
 
         .container {
             width: 110rem;
@@ -83,7 +84,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background-image: linear-gradient(to right bottom, #67b26f, #4ca2cd);
+            /*background-image: linear-gradient(to right bottom, #67b26f, #4ca2cd);*/
             opacity: .4;
         }
 
@@ -118,12 +119,12 @@
             top: 2rem;
             left: 2rem;
             font-size: 1.5rem;
-            color: white;
+            color: black;
             font-weight: 700;
             text-transform: uppercase;
             text-decoration: none;
             z-index: 1;
-            border: 2px solid white;
+            border: 2px solid black;
             border-radius: 100rem;
             padding: 0 2rem;
             transition: all .3s;
@@ -138,9 +139,9 @@
         }
 
         .laptop__name {
-            background: linear-gradient(to right, #67b26f, #4ca2cd);
+            background: black;
             padding: 1.75rem 1rem;
-            font-family: "Bungee Inline", sans-serif;
+            font-family: "NYTKarnak";
             font-weight: 400;
             font-size: 3.25rem;
             color: white;
@@ -166,7 +167,7 @@
         .laptop__link:link,
         .laptop__link:visited {
             display: block;
-            background-color: #5aaa9d;
+            background-color: #000000;
             color: white;
             font-size: 1.6rem;
             font-weight: 700;
@@ -215,9 +216,9 @@
 
 <body>
     <div class="container">
-        <h1>The Laptop Store!</h1>
+        <h1>The New York Times</h1>
         <figure class="laptop">
-            <p class="laptop__price">${%PRICE%}</p>
+           <!-- <p class="laptop__price">${%PRICE%}</p>-->
             <a href="/products" class="laptop__back"><span class="emoji-left">👈</span>Back</a>
             <div class="laptop__hero">
                 <img src="/{%IMAGE%}" alt="{%PRODUCTNAME%}" class="laptop__img">
@@ -230,7 +231,7 @@
                 <p><span class="emoji-left">📦</span> {%RAM%}</p>
             </div>
             <p class="laptop__description">{%DESCRIPTION%}</p>
-            <p class="laptop__source">Source: <a href="https://www.techradar.com/news/mobile-computing/laptops/best-laptops-1304361"
+            <p class="laptop__source">Demo Test Page <a href="https://www.nytimes.com"
                     target="_blank">https://www.techradar.com/news/mobile-computing/laptops/best-laptops-1304361</a></p>
             <a href="#" class="laptop__link">Buy now for ${%PRICE%} <span class="emoji-right">🥳 😍</span></a>
         </figure>
