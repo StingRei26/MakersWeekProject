@@ -1,14 +1,14 @@
 [
     {
         "id": "0",
-        "productName": "Mobile",
+        "productName": "Mobile Flex Frame Messaging",
         "image": "Mobile.png",
         "cpu": "",
         "ram": "",
         "storage": "",
         "screen": "",
         "price": "",
-        "description": ""
+        "description": "Description Field: This is a mobile flex frame messaging. Currently our main go to for standard media buys."
     },
     {
         "id": "1",
