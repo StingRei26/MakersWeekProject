@@ -85,7 +85,7 @@
             width: 60px;
             height: 34px;
             top:138px;
-            right:437px;
+            right:163px;
          }
 
         .switch input { 
@@ -143,6 +143,14 @@
         border-bottom: 1px solid #999999;;
         }
 
+        #mobiledesk {   
+        right: 0px;
+        text-align: right;
+        font-size: 12px;
+        cursor: pointer;
+        color:black 
+        }
+
         h1::before {
             content: '';
             display: block;
@@ -170,8 +178,8 @@
         }
 
         .card {
-            background: white;
-            box-shadow: 0 3rem 6rem 1rem rgba(0, 0, 0, 0.25);
+            background: #E3E3E3;
+            /*box-shadow: 0 3rem 6rem 1rem rgba(0, 0, 0, 0.25);*/
             height:fit-content; 
         }
 
@@ -194,11 +202,12 @@
         .card__img {
             width: 100%;
             display: block;
+            margin-top:20px;
         }
 
         .card__name {
             /*background: linear-gradient(to right, #67b26f, #4ca2cd);*/
-            background-color: #E3E3E3; 
+            /*background-color: #E3E3E3; */
             /*padding: 1.3rem .8rem;*/
             font-family: "NYTFranklin";
             font-weight: 200;
@@ -267,6 +276,49 @@
             font-size: 2rem;
             margin-left: 1rem;
         }
+/* CSS for dropdown */
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 11px;
+  border: none;
+  cursor: pointer;
+  position:absolute;
+  top: 1px;
+    bottom: -32px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: gray;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+  left:1040px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
     </style>
 <body>
         <div id="topLogo">
@@ -276,10 +328,19 @@
         <div class="navbar"> </div>
         <div class="container">
             <h1>Ad Product Library</h1>
-               <label class="switch">Mobile
-            <input type="checkbox">
-            <span class="slider"></span>
-        </label>
+            <div id="mobiledesk">Mobile | Desktop </div>
+            
+            <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Vertical</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Auto</a>
+    <a href="#about">Luxury</a>
+    <a href="#contact">Education</a>
+  </div>
+</div>
+
+
+
             <ul>
                 <li id="showall"><a href="#showall">show all</a></li>
                 <li id="messId"><a href="#messaging">messaging</a></li>
@@ -287,6 +348,7 @@
                 <li id="video"><a href="#video">video</a></li>
                 <li id="custom"><a href="#custom">custom</a></li>
             </ul>
+            
             <div class="cards-container">
                 {%CARDS%}
             </div>
@@ -302,6 +364,7 @@ var showall = document.getElementById("showall");
 var video = document.getElementById("video");
 var slideshow = document.getElementById("slideshow");
 var custom = document.getElementById("custom");
+var mobiledesk = document.getElementById("mobiledesk");
 var card0 = document.getElementsByClassName("card")[0];
 var card1 = document.getElementsByClassName("card")[1];
 var card2 = document.getElementsByClassName("card")[2];
@@ -399,4 +462,45 @@ var card11 = document.getElementsByClassName("card")[11];
         card11.style.display = "none";
         card4.style.display = "none";
     }
+    mobiledesk.onclick = () => {
+       card0.style.display = "none";
+        card1.style.display = "none";
+        card2.style.display = "none";
+        card5.style.display = "none";
+        card6.style.display = "none";
+        card7.style.display = "none";
+        card8.style.display = "none";
+        card10.style.display = "none";
+        card3.style.display = "none";
+        card9.style.display = "none";
+        card11.style.display = "block";
+        card4.style.display = "none"; 
+    }
+
+
+
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+
+
 </script>
